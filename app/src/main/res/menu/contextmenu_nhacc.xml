@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnu_suanhacc"
+        android:title="Sửa nhà cung cấp" />
+    <item
+        android:id="@+id/mnu_xoanhacc"
+        android:title="Xóa nhà cung cấp" />
+</menu>

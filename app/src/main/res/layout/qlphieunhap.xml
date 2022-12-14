@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#7F6BA3"
+        android:text="Quản lý loại"
+        android:textAlignment="center"
+        android:textColor="#F3EEEE"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/txtDsach"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:text="Danh sách loại :"
+        android:textAlignment="textStart"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lvLoai"
+        android:layout_width="match_parent"
+        android:layout_height="444dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnOpenThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="40sp"
+            android:onClick="Click_Them"
+            android:src="@android:drawable/ic_input_add"
+            app:backgroundTint="#00BCD4" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnBackQl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="40sp"
+            android:src="?attr/homeAsUpIndicator"
+            app:backgroundTint="#00BCD4" />
+    </RelativeLayout>
+</LinearLayout>

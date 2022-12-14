@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTilleThem"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Thêm loại"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/txtLoai"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:text="Loại :"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/eLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+
+            android:layout_toRightOf="@id/txtLoai"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:onClick="themPN"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnXoaTrang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XÓA TRẮNG"
+        android:onClick="vtPN"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnBack"
+        app:backgroundTint="#00BCD4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:onClick="TroVe"
+        android:layout_marginBottom="40sp"
+        android:src="?attr/homeAsUpIndicator" />
+</RelativeLayout>
+
+</LinearLayout>

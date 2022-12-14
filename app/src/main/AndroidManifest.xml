@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ql_vat_tu">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ql_Vat_Tu"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CreateNhaCCActivity"
+            android:label="Thêm mới nhà cung cấp"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".CreatLoaiActivity"
+            android:label="Thêm mới loại vật tư"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name=".ShowListNhaCCActivity" >
+        </activity>
+        <activity android:name=".ShowListLoaiActivity" >
+        </activity>
+        <activity
+            android:name=".InsertVattuActivity"
+            android:label="Quản lý vật tư" >
+        </activity>
+
+        <activity
+            android:name=".UpdateVattuActivity"
+            android:label="Sửa vật tư"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name=".QlPhieuNhap"></activity>
+        <activity android:name=".SuaPN"></activity>
+        <activity android:name=".ThemPN"></activity>
+    </application>
+
+</manifest>
